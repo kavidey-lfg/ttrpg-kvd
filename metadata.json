@@ -1,0 +1,6 @@
+{
+  "name": "VirtualGM",
+  "description": "A solo tabletop role-playing game engine powered by Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
