@@ -205,7 +205,7 @@ export default function App() {
     setIsLoading(true);
     
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
       const prompt = `Start a new solo tabletop RPG campaign in the ${genre} genre. 
       My character is named ${charName}. 
       Appearance: ${charAppearance || 'Not specified'}. 
