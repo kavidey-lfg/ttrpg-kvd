@@ -214,7 +214,7 @@ export default function App() {
       Introduce the setting, my character's starting situation based on these details, and present the first hook or obstacle. End by asking what I do.`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-3.1-pro-preview',
+        model: 'gemini-2.5-flash',
         contents: prompt,
         config: {
           systemInstruction: SYSTEM_PROMPT,
@@ -261,7 +261,7 @@ export default function App() {
       history.push({ role: 'user', parts: [{ text: userMessage }] });
 
       const response = await ai.models.generateContent({
-        model: 'gemini-3.1-pro-preview',
+        model: 'gemini-2.5-flash',
         contents: history,
         config: {
           systemInstruction: SYSTEM_PROMPT,
